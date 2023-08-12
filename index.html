@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Traffic Simulation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="road-container">
+        <div class="road">
+            <div class="lane top-lane">
+                <div class="traffic-light" id="trafficLight1">
+                    <div class="light-frame">
+                        <div class="light red"></div>
+                        <div class="light yellow"></div>
+                        <div class="light green"></div>
+                    </div>
+                </div>
+                <div class="car" id="car1">
+                    <div class="wheel wheel-left"></div>
+                    <div class="wheel wheel-right"></div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="lane top-lane"></div>
+            <div class="lane middle-lane">
+                <div class="traffic-light">
+                    <div class="light red"></div>
+                    <div class="light yellow"></div>
+                    <div class="light green"></div>
+                </div>
+                <div class="car" id="car2">
+                    <div class="wheel wheel-left"></div>
+                    <div class="wheel wheel-right"></div>
+                </div>
+                <div class="train-container">
+                    <div class="train-carriage">
+                        <div class="train-wheel"></div>
+                        <div class="train-wheel" style="right: 0;"></div>
+                    </div>
+                    <div class="train-carriage">
+                        <div class="train-wheel"></div>
+                        <div class="train-wheel" style="right: 0;"></div>
+                    </div>
+                    <div class="train-carriage">
+                        <div class="train-wheel"></div>
+                        <div class="train-wheel" style="right: 0;"></div>
+                    </div>
+                    <div class="train-carriage">
+                        <div class="train-wheel"></div>
+                        <div class="train-wheel" style="right: 0;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="lane middle-lane"></div>
+            <div class="lane bottom-lane">
+                <div class="traffic-light">
+                    <div class="light red"></div>
+                    <div class="light yellow"></div>
+                    <div class="light green"></div>
+                </div>
+                <div class="car reverse" id="car3">
+                    <div class="wheel wheel-left"></div>
+                    <div class="wheel wheel-right"></div>
+                </div>
+            </div>
+            <div class="divider"></div>
+            <div class="lane bottom-lane"></div>
+            <div class="lane bottom-lane">
+                <div class="traffic-light">
+                    <div class="light red"></div>
+                    <div class="light yellow"></div>
+                    <div class="light green"></div>
+                </div>
+                <div class="car reverse" id="car4">
+                    <div class="wheel wheel-left"></div>
+                    <div class="wheel wheel-right"></div>
+                </div>
+            </div>
+        </div>
+        <div class="zebra-crossing-horizontal">
+            <div class="zebra-line"></div>
+        </div>
+        <div class="traffic-light-left">
+            <div class="light-frame">
+                <div class="light red"></div>
+                <div class="light yellow"></div>
+                <div class="light green"></div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
